@@ -1,36 +1,52 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+## TODO app
 
-## Getting Started
+This repository demonstrates a simple task management application built with Next.js, featuring task creation, update, and color selection functionalities. It integrates with a backend for persistent task data storage
 
-First, run the development server:
+# What's been done
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+- Create and update tasks with titles and color options
+- Visual color selection for tasks.
+- Simple UI for managing tasks using Tailwind CSS.
+- Integrated form handling with react-hook-form and Zod validation.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+# Environment Setup
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+Node Version: v20.10.0
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+# Preparation
 
-## Learn More
+Follow the steps below to run the project locally.
+In the todo-app-frontend repo `git clone main`
+Navigate to the project directory `cd <repository-directory>`
+Install dependencies `npm install`
+Run the development server `npm run dev`
 
-To learn more about Next.js, take a look at the following resources:
+### Test Scenarios
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+- [ ] Visit "localhost:3000" to see the Task Management App, where you can view tasks and create new ones.
+- [ ] Click on a task to edit/update
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+# Tech Stack
 
-## Deploy on Vercel
+Frontend Framework: Next.js
+Programming Language: TypeScript
+UI Component Library: Tailwind CSS (for custom design) + Shadcn (for components)
+Routing: App router
+API Requests: Axios
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+# Approaches Used
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Component-Based Architecture
+The app follows a modular, component-based structure, making it easier to manage and scale. Each UI element (like buttons, inputs, and modals) is encapsulated in its own reusable component.
+
+TypeScript for Type Safety
+TypeScript is used to ensure type safety, helping catch potential errors early in the development process. This improves code quality and maintainability.
+
+Tailwind CSS + Shadcn for UI Design
+Tailwind CSS is used to create a custom, responsive layout for the app. Shadcn is leveraged for handling modals, offering a better experience compared to Headless UI.
+
+React Hook Form + Zod for Form Management
+React Hook Form simplifies form handling with minimal re-renders, while Zod is used for validation. This combination ensures a smoother, more responsive form experience.
+
+Axios for API Requests
+Axios is used for making HTTP requests to interact with backend APIs. It's a promise-based library that makes working with asynchronous data fetching simple and clean.
